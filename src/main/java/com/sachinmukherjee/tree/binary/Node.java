@@ -2,13 +2,18 @@ package com.sachinmukherjee.tree.binary;
 
 public class Node {
 
-	public final int data;
-	public Node left;
-	public Node right;
+	private  int data;
+	private Node left;
+	private Node right;
 
 	public Node(final int data) {
 		this.data = data;
-		left=right=null;
+	}
+	
+	public Node(final int data, final Node left,final Node right) {
+		this.data=data;
+		this.left=left;
+		this.right=right;
 	}
 
 	@Override
